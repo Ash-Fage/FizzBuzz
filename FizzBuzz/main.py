@@ -18,8 +18,8 @@ def count(start, stop):
     if start < stop:
         for x in range(start, (stop + 1)):
             fizzBuzz(x)
-    elif stop > start:
-        for x in range(start, (stop + 1), -1):
+    elif start > stop:
+        for x in range(start, (stop - 1), -1):
             fizzBuzz(x)
     else:
         fizzBuzz(start)
